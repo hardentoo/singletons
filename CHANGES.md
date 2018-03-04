@@ -36,6 +36,10 @@ Changelog for singletons project
   `(%<>)`, as they are superseded by the corresponding methods from
   `PSemigroup` and `SSemigroup`.
 
+* Add `Data.{Promotion,Singletons}.Prelude.{Const,Identity}`, which define
+  promoted and singled version of the `Const` and `Identity` data types,
+  respectively.
+
 * Promote and single the `Down` newtype in `Data.Singletons.Prelude.Ord`.
 
 * To match the `base` library, the promoted/singled versions of `comparing`

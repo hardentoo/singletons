@@ -28,6 +28,7 @@ import Data.Map ( Map )
 import qualified Data.Monoid as Monoid
 import Data.Semigroup as Semigroup
 import Data.Foldable
+import Data.Functor.Identity
 import Data.Traversable
 import Data.Generics
 import Data.Void
@@ -50,6 +51,7 @@ boundedBasicTypes =
             , ''(,,,,)
             , ''(,,,,,)
             , ''(,,,,,,)
+            , ''Identity
             ] ++ enumBasicTypes
 
 enumBasicTypes :: [Name]
