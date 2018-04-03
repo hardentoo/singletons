@@ -72,7 +72,7 @@ instance Quasi SgM where
   qReifyConStrictness = liftSgM `comp1` qReifyConStrictness
   qIsExtEnabled       = liftSgM `comp1` qIsExtEnabled
   qExtsEnabled        = liftSgM qExtsEnabled
-  qAddForeignFile     = liftSgM `comp2` qAddForeignFile
+  qAddForeignFilePath = liftSgM `comp2` qAddForeignFilePath
   qAddCorePlugin      = liftSgM `comp1` qAddCorePlugin
 
   qRecover (SgM handler) (SgM body) = do

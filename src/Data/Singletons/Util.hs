@@ -404,7 +404,7 @@ instance (Quasi q, Monoid m) => Quasi (QWithAux m q) where
   qReifyConStrictness = lift `comp1` qReifyConStrictness
   qIsExtEnabled       = lift `comp1` qIsExtEnabled
   qExtsEnabled        = lift qExtsEnabled
-  qAddForeignFile     = lift `comp2` qAddForeignFile
+  qAddForeignFilePath = lift `comp2` qAddForeignFilePath
   qAddCorePlugin      = lift `comp1` qAddCorePlugin
 
   qRecover exp handler = do
